@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Inria+Sans&family=Roboto+Mono&display=swap");
+
+// font-family: 'Fira Code', monospace;
+// font-family: 'Inria Sans', sans-serif;
+// font-family: 'Roboto Mono', monospace;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // background-color: var(--background-color);
+  background-color: #e4e4e4ba;
+  font-family: "Inria Sans", sans-serif;
+  color: var(--light-slate);
+}

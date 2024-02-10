@@ -1,0 +1,42 @@
+.social-icons {
+  position: fixed;
+  bottom: 2rem;
+  left: 3rem;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    li {
+      font-size: var(--tlarge2);
+      transition: 0.3s ease-in-out;
+      a {
+        color: #34495e;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--theme-color);
+        }
+
+        &:focus {
+          transform: translateY(-4px);
+          color: var(--theme-color);
+        }
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+    &::after {
+      content: "";
+      display: flex;
+      width: 2px;
+      height: 90px;
+      background-color: #34495e;
+      margin: 0 auto;
+    }
+  }
+}

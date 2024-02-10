@@ -1,0 +1,15 @@
+.btn {
+  color: #34495e;
+  font-size: var(--tsm);
+  padding: 0.4rem 0.8rem;
+  background: transparent;
+  text-decoration: none;
+  border: 1.8px solid #34495e;
+  border-radius: 4px;
+  outline: none;
+
+  &:hover {
+    color: var(--theme-color);
+    border: 1.8px solid var(--theme-color);
+  }
+}

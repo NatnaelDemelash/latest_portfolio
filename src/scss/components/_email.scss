@@ -1,0 +1,32 @@
+.email {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+
+  a {
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    color: #34495e;
+    font-size: var(--tsm1);
+    letter-spacing: 0.06rem;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 0.5rem;
+
+    &:hover {
+      color: var(--theme-color);
+      transition: 0.3s ease-in-out;
+    }
+
+    &:focus {
+      color: var(--theme-color);
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90px;
+    background-color: #34495e;
+    margin: 0 auto;
+  }
+}
