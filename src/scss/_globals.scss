@@ -15,4 +15,5 @@ body {
   background-color: #e4e4e4ba;
   font-family: "Inria Sans", sans-serif;
   color: var(--light-slate);
+  counter-reset: title;
 }
