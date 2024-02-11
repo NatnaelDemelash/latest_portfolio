@@ -17,3 +17,8 @@ body {
   color: var(--light-slate);
   counter-reset: title;
 }
+
+body,
+html {
+  scroll-behavior: smooth;
+}
