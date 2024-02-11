@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 const Navbar = () => {
   const sectionLinks = [
     { name: "About", link: "/#about" },
-    { name: "Experiance", link: "/#experiance" },
+    { name: "Experiance", link: "/#experience" },
     { name: "Work", link: "/#work" },
     { name: "Contact", link: "/#contact" },
   ];
