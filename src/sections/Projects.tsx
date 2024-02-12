@@ -14,8 +14,8 @@ const Projects = () => {
         "An AI based tech company which majorly focuses on consumer well-being through a healthy diet.",
       projectTech: ["HTML", "CSS", "JavaScript"],
       projectExternalLinks: {
-        github: "",
-        externalLink: "",
+        github: "https://github.com/NatnaelDemelash/OmniFood",
+        externalLink: "https://loquacious-haupia-108385.netlify.app/",
       },
     },
     {
@@ -26,8 +26,8 @@ const Projects = () => {
         "An Ecommerce app built with React.js using react context -( FakeStore API) for data fetching/backend",
       projectTech: ["React", "TailwindCSS", "Context API"],
       projectExternalLinks: {
-        github: "",
-        externalLink: "",
+        github: "https://github.com/NatnaelDemelash/aurora_aisel_shop",
+        externalLink: "https://aurora-aisel-shop.vercel.app/",
       },
     },
     {
@@ -38,8 +38,8 @@ const Projects = () => {
         "Pizza ordering website .Users can browse through a variety of pizza options, select their preferred menu",
       projectTech: ["React", "Redux", "TailwindCSS"],
       projectExternalLinks: {
-        github: "",
-        externalLink: "",
+        github: "https://github.com/NatnaelDemelash/pizzeria_pizza",
+        externalLink: "https://pizzeria101.netlify.app/",
       },
     },
     {
@@ -50,8 +50,8 @@ const Projects = () => {
         "A simple React and TypeScript app to search popular movies and TvShows with additional user custom rating feature.",
       projectTech: ["React", "ChakraUI", "TypeScript"],
       projectExternalLinks: {
-        github: "",
-        externalLink: "",
+        github: "https://github.com/NatnaelDemelash/rottenApple",
+        externalLink: "https://rottenapple.netlify.app/",
       },
     },
   ];
@@ -117,6 +117,7 @@ const Projects = () => {
                       <Link
                         href={projectExternalLinks.github}
                         className="project-info-links-item-link"
+                        target="_blank"
                       >
                         <FiGithub />
                       </Link>
@@ -125,6 +126,7 @@ const Projects = () => {
                       <Link
                         href={projectExternalLinks.externalLink}
                         className="project-info-links-item-link"
+                        target="_blank"
                       >
                         <FiExternalLink />
                       </Link>

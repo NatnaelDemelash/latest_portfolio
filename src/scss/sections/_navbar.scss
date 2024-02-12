@@ -55,4 +55,15 @@ nav {
       }
     }
   }
+
+  .blur-nav {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    z-index: 20;
+    background-color: #e5e7e9;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    backdrop-filter: blur(10px);
+  }
 }
