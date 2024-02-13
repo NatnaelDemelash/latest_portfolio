@@ -3,9 +3,13 @@ import Logo from "../assets/logo.png";
 import Image from "next/image";
 import Button from "@/components/Button";
 import { useEffect, useState } from "react";
+import { CgClose } from "react-icons/cg";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const [navbarVisible, setNavbarVisible] = useState(false);
+  const [responsiveNavVisible, setResponsiveNavVisible] = useState(false);
+
   const sectionLinks = [
     { name: "About", link: "/#about" },
     { name: "Experiance", link: "/#experience" },
@@ -28,8 +32,29 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="nav-items">
-          <ul className="nav-item-lists">
+        {/* mob-nav */}
+        <div className="nav-responsive-toggle">
+          {responsiveNavVisible ? (
+            <CgClose
+              onClick={(e) => {
+                e.stopPropagation();
+                setResponsiveNavVisible(false);
+              }}
+            />
+          ) : (
+            <GiHamburgerMenu
+              onClick={(e) => {
+                e.stopPropagation();
+                setResponsiveNavVisible(true);
+              }}
+            />
+          )}
+        </div>
+
+        <div
+          className={`${responsiveNavVisible && "nav-responsive"} nav-items `}
+        >
+          <ul className="nav-items-list">
             {sectionLinks.map(({ name, link }) => {
               return (
                 <li key={name} className="nav-items-list-item">
@@ -40,7 +65,7 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <div className="nav-lists-button">
+          <div className="nav-list-button">
             <Button text="Resume" link="https://localhost:3000/resume.pdf" />
           </div>
         </div>
