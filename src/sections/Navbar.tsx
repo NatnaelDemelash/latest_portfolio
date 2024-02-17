@@ -23,6 +23,31 @@ const Navbar = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const main = document.querySelector("main");
+
+    if (responsiveNavVisible) {
+      main?.classList.add("blur");
+    } else {
+      main?.classList.remove("blur");
+    }
+  }, [responsiveNavVisible]);
+
+  useEffect(() => {
+    const links = document.querySelectorAll(".nav-items-list-item-link");
+    links.forEach((link) => {
+      link.addEventListener("click", () => setResponsiveNavVisible(false));
+    });
+    const nav = document.querySelector(".nav-items");
+    nav?.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+    const html = document.querySelector("html");
+    html?.addEventListener("click", (e) => {
+      setResponsiveNavVisible(false);
+    });
+  }, []);
+
   return (
     <nav>
       <div className={`wrapper ${navbarVisible ? "blur-nav" : ""}`}>

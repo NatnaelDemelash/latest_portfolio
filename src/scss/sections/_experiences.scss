@@ -131,4 +131,42 @@
       }
     }
   }
+  @media screen and (max-width: 968px) {
+    .title {
+      h2 {
+        &::after {
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 5rem 0;
+    .title {
+      h2 {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .container {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      .exp-details {
+        height: max-content;
+      }
+      .exp-slider {
+        display: flex;
+        overflow-x: scroll;
+
+        &::before {
+          display: none;
+        }
+        .underline {
+          display: none;
+        }
+      }
+    }
+  }
 }

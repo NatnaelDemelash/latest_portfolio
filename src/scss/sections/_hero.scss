@@ -33,4 +33,9 @@
       font-size: var(--tsm1);
     }
   }
+  @media screen and (max-width: 780px) {
+    &-text {
+      width: 90%;
+    }
+  }
 }
